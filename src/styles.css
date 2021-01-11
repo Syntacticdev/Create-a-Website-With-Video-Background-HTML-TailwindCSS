@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --overlay: #03a9fa;
+    font-family: 'Poppins',sans-serif;
+}
+
+.showcase {
+    transition: .5s
+}
+.showcase.active {
+    @apply right-72;
+}
+
+.menu-a {
+    @apply text-gray-800 hover:text-overlay no-underline text-2xl
+}
+

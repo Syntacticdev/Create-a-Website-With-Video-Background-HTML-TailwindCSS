@@ -1,0 +1,60 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./font-awesome/fontawesome.min.css">
+    <link rel="stylesheet" href="./font-awesome/all.min.css">
+    <link rel="stylesheet" href="./public/styles.css">
+</head>
+<body class="m-0 p-0 box-border ">
+   <section class="showcase absolute right-0 w-full min-h-screen 
+   p-20 flex justify-between items-center bg-black text-white z-10
+   transition ease-in-out duration-1000
+   ">
+    <header class="absolute top-0 left-0 w-full py-10 px-24 z-30 flex items-center justify-between lg:p-10">
+        <h2 class="logo uppercase cursor-pointer font-black">Travel</h2>
+        <div class="toggle relative  align-center cursor-pointer"><i class="fas fa-bars fa-2x"></i></div>
+    </header>
+        <video src="./public/Pexels Videos 2169880.mp4" muted loop autoplay class="absolute top-0 left-0 w-full h-full object-cover opacity-80"></video>
+
+        <div class="overlay absolute top-0 left-0 w-full h-full bg-overlay blend-screen"></div>
+
+        <div class="text z-40 relative">
+            <h2 class="text-7xl font-extrabold uppercase 2xl:text-4xl">Never Stop</h2>
+            <h3 class="text-5xl my-5 font-normal max-w-2xl 2xl:text-3xl">Exploring The World</h3>
+            <p class="max-w-2xl my-5 text-base font-normal">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit voluptatibus dolor at eius voluptates impedit harum tempora excepturi, animi nam.</p>
+            <a href="#" class="text-xs inline-block bg-white text-gray-800 py-2.5 px-7 mt-2.5 uppercase tracking-wider hover:tracking-widest transition duration-200 ease-in-out">Explore</a>
+        </div>
+
+        <ul class="social absolute bottom-5 z-50 flex justify-center align-center">
+            <li class="list-none"><a href="facebook.png"class="inline-block mr-5 transform scale-50 transition duration-75 hover:scale-50 hover:-translate-y-3.5"><i class="fab fa-facebook fa-2x"></i></a></li>
+            <li class="list-none"><a href="twitter.png" class="inline-block mr-5 transform scale-50 transition duration-75 hover:scale-50 hover:-translate-y-3.5"><i class="fab fa-twitter fa-2x"></i></a></li>
+            <li class="list-none"><a href="instagram.png" class="inline-block mr-5 transform scale-50 transition duration-75 hover:scale-50 hover:-translate-y-3.5"><i class="fab fa-instagram  fa-2x"></i></a></li>
+        </ul>
+   </section>
+
+   <div class="menu absolute top-0 right-0 w-72 h-screen flex items-center justify-center">
+       <ul class="relative list-none">
+           <li><a href="" class="menu-a">Home</a></li>
+           <li><a href="" class="menu-a">News</a></li>
+           <li><a href="" class="menu-a">Destination</a></li>
+           <li><a href="" class="menu-a">Blog</a></li>
+           <li><a href="" class="menu-a">Contact</a></li>
+       </ul>
+   </div>
+
+   <script>
+       const showcase = document.querySelector('.showcase')
+       const menuToggle = document.querySelector('.toggle');
+       menuToggle.addEventListener('click',()=>{
+           showcase.classList.toggle('active')
+        if(showcase.classList.contains('active')){
+            menuToggle.innerHTML = '<i class="fas fa-times fa-2x"></i>' 
+        } else {
+            menuToggle.innerHTML = '<i class="fas fa-bars fa-2x">' 
+        }
+       })
+   </script>
+</body>
+</html>
